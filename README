@@ -1,0 +1,17 @@
+# Clay
+
+Clay is intented to be an open source web tools for URL processing from simple conversion such as
+URL->PDF to URL analytics platform. Version 0.1.0 is just url to pdf converter and can
+be easily extended to do other trivial stuff like extracting texts or images or anything from a given url.
+I am throwing it out there so people interested can add or extended with usefull URL processing tools. My
+hope is that maybe we can make this into a swiss army knife for URL mining.  
+
+## Usage
+
+
+
+## License
+
+Copyright (C) 2010 FIXME
+
+Distributed under the Eclipse Public License, the same as Clojure.

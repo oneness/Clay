@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Clay Open Source Webs Tools</title>
+    <link href="/main.css" rel="stylesheet" type="text/css" />
+    <script src="/main.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+  </head>
+  <body id="body" class="body" onLoad="onLoad()">
+    <div id="header" class="header">
+      <a href="/" id="title" class="title">Clay Open Source Web Tools</a>
+    </div>
+    <div id="left"></div>
+    <div id="center" class="center">
+      <input id="urlinput" class="urlinput" type="text" name="urlinput"
+	     value="Please enter a URL here"
+	     onclick="this.value='';"
+	     onfocus="this.select()"
+	     tabindex="1"
+	     onblur="this.value=!this.value?'Please enter a URL here':this.value;">
+	</input>
+	<select id="choice" class="choice" name="choice" tabindex="2">
+	  <option selected  value="topdf">Convert to PDF</option>
+	  <option value="totext">Extract text</option>
+	</select>
+	<input id="convertbutton" class="button"
+	       type="submit" value="GO"
+	       tabindex="3" onclick="convert()">
+	</input>
+        <div class="file" id="file"></div>
+	<div class="loading" id="loading">
+	  <p><img src="loading.gif" /> Converting...</p>
+	</div>
+    </div>
+    <div id="right"></div>
+    <div id="footer"></div>
+  </body>
+</html>
